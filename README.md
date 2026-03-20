@@ -1,4 +1,4 @@
-# 📦 terraform-meraki-organization
+# 📦 Meraki Organization Tofu Module
 
 OpenTofu/Terraform module that creates a [Cisco Meraki organization](https://developer.cisco.com/meraki/api-v1/) resource.
 
@@ -6,15 +6,13 @@ OpenTofu/Terraform module that creates a [Cisco Meraki organization](https://dev
 
 ```hcl
 module "meraki_organization" {
-  source  = "github.com/YOUR_GITHUB_ORG/terraform-meraki-organization"
+  source  = "hlvtechnologies/meraki-organization"
   version = "~> 0.1"
 
   org_name               = "Example Organization"
   org_management_details = []
 }
 ```
-
-Replace `YOUR_GITHUB_ORG/terraform-meraki-organization` with your registry namespace or Git source. When publishing to the Terraform Registry, pin `version` to a release (for example `~> 0.1`); for raw Git sources, use `?ref=` on the `source` URL instead of `version`.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
