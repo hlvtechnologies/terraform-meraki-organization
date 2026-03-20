@@ -6,7 +6,7 @@ OpenTofu/Terraform module that creates a [Cisco Meraki organization](https://dev
 
 ```hcl
 module "meraki_organization" {
-  source  = "hlvtechnologies/meraki-organization"
+  source  = "hlvtechnologies/organization"
   version = "~> 0.1"
 
   org_name               = "Example Organization"
